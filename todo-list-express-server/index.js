@@ -13,9 +13,6 @@ const { connection } = require( './configs/db' ) ;
 
 const { userRouter } = require( './routes/userRoutes' ) ;
 
-const { todoRouter } = require( './routes/todoRoutes' ) ;
-
-
 const app = express() ;
 
 app.use( express.json() ) ;
@@ -35,8 +32,6 @@ app.get( '/' , ( req , res ) => {
 
 
 app.use( '/user' , userRouter ) ;
-
-app.use( '/todo' , todoRouter ) ;
 
 
 app.listen( PORT , async ()=>{
