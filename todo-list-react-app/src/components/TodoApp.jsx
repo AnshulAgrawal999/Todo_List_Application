@@ -5,6 +5,8 @@ import avatar from '../assets/placeholder-avatar.png'; // Placeholder avatar ima
 
 import TodoHeader from './TodoHeader.jsx';
 
+import TodoSidebar from './TodoSidebar.jsx';
+
 // Sample users data
 const initialUsers = [
     {
