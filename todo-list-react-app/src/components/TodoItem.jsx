@@ -66,3 +66,5 @@ const TodoItem = ({ todo, onToggle, onEdit, onDelete, onAddNote, onShowDetails }
         </div>
     );
 };
+
+export default TodoItem;

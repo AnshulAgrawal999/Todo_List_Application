@@ -49,3 +49,5 @@ const TodoHeader = ({ currentUser, users, onUserSwitch, onExport }) => {
         </header>
     );
 };
+
+export default TodoHeader;

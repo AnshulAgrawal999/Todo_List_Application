@@ -58,3 +58,5 @@ const TodoSidebar = ({ onFilter }) => {
         </aside>
     );
 };
+
+export default TodoSidebar;

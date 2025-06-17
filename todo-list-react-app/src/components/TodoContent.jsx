@@ -73,3 +73,5 @@ const TodoContent = ({ todos, currentUser, onAddTodo, onSearch, onToggleTodo, on
         </section>
     );
 };
+
+export default TodoContent;
