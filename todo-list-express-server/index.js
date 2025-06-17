@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 6000 ;
 
 const { connection } = require( './configs/db' ) ;
 
-const { userRouter } = require( './routes/userRoutes' ) ;
+
 
 const app = express() ;
 
@@ -31,7 +31,6 @@ app.get( '/' , ( req , res ) => {
 } ) ;
 
 
-app.use( '/user' , userRouter ) ;
 
 
 app.listen( PORT , async ()=>{
