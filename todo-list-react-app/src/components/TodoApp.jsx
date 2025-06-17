@@ -7,6 +7,8 @@ import TodoHeader from './TodoHeader.jsx';
 
 import TodoSidebar from './TodoSidebar.jsx';
 
+import TodoContent from './TodoContent.jsx';
+
 // Sample users data
 const initialUsers = [
     {
