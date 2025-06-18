@@ -1,6 +1,8 @@
 
 
-const BASE_URL = 'http://localhost:5000';
+// const BASE_URL = 'http://localhost:5000';
+
+const BASE_URL = 'https://todo-list-application-ieht.onrender.com';
 
 export const todoApi = () => {
   const apiCall = async (endpoint, options = {}) => {
