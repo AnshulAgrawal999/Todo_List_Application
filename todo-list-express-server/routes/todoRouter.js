@@ -3,9 +3,9 @@ const express = require( 'express' ) ;
 
 const todoRouter = express.Router() ;
 
-const { User } = require( '../models/userModel' ) ;
+const { User } = require( '../models/UserModel' ) ;
 
-const { Todo } = require( '../models/todoModel' ) ;
+const { Todo } = require( '../models/TodoModel' ) ;
 
 
 // Helper function to get user from request
@@ -25,7 +25,7 @@ const getCurrentUser = async ( req ) => {
 
 
 // Todo Export Endpoint
-app.get( '/export' , async ( req , res ) => {
+todoRouter.get( '/export' , async ( req , res ) => {
 
   try {
 
@@ -69,7 +69,7 @@ app.get( '/export' , async ( req , res ) => {
 
 
 // Todo Endpoints
-app.get( '/' , async ( req , res ) => {
+todoRouter.get( '/' , async ( req , res ) => {
 
   try {
 
@@ -136,7 +136,7 @@ app.get( '/' , async ( req , res ) => {
 ) ;
 
 
-app.get( '/:id' , async ( req , res ) => {
+todoRouter.get( '/:id' , async ( req , res ) => {
 
   try {
 
@@ -164,7 +164,7 @@ app.get( '/:id' , async ( req , res ) => {
 });
 
 
-app.post( '/' , async ( req , res ) => {
+todoRouter.post( '/' , async ( req , res ) => {
 
   try {
 
@@ -205,7 +205,7 @@ app.post( '/' , async ( req , res ) => {
 ) ;
 
 
-app.put( '/:id' , async ( req , res ) => {
+todoRouter.put( '/:id' , async ( req , res ) => {
 
   try {
 
@@ -250,7 +250,7 @@ app.put( '/:id' , async ( req , res ) => {
 }
 ) ;
 
-app.delete( '/:id' , async ( req , res ) => {
+todoRouter.delete( '/:id' , async ( req , res ) => {
 
   try {
 
@@ -281,7 +281,7 @@ app.delete( '/:id' , async ( req , res ) => {
 
 
 // Note Endpoints
-app.post( '/:id/notes', async ( req , res) => {
+todoRouter.post( '/:id/notes', async ( req , res) => {
 
   try {
 

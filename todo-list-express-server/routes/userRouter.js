@@ -3,10 +3,10 @@ const express = require( 'express' ) ;
 
 const userRouter = express.Router() ;
 
-const { User } = require( '../models/userModel' ) ;
+const { User } = require( '../models/UserModel' ) ;
 
 // User Endpoints
-app.get( '/' , async ( req , res ) => {
+userRouter.get( '/' , async ( req , res ) => {
 
   try {
 
