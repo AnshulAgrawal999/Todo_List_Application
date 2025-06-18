@@ -6,7 +6,7 @@ const userRouter = express.Router() ;
 const { User } = require( '../models/userModel' ) ;
 
 // User Endpoints
-app.get( '/api/users' , async ( req , res ) => {
+app.get( '/' , async ( req , res ) => {
 
   try {
 
